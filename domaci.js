@@ -150,12 +150,30 @@ let koalasAvgScore = (88 + 91 + 110) / 3;
             weight: 78,
             height: 1.69,
             calcBMI: function() {
-                this.bmi = this.mass / this.height ** 2;
+                this.bmi = this.weight / this.height ** 2;
                 return this.bmi;
             }
         }
+
+        const john = {
+            name: 'John',
+            weight: 92,
+            height: 1.95,
+            calcBMI: function() {
+                this.bmi = this.weight / this.height ** 2;
+                return this.bmi;
+            }
+        }
+
         mark.calcBMI();
-        console.log(mark.bmi);
+        john.calcBMI();
+        console.log(mark.bmi, john.bmi);
+
+        if(john.bmi > mark.bmi){
+        console.log(`${john.name}'s BMI (${john.bmi}) is higher than ${mark.name}'s (${mark.bmi})!`);
+        } else{
+            console.log(`${mark.name}'s BMI (${mark.bmi}) is higher than ${john.name}'s (${john.bmi})!`);
+        }
 
         /*Let's go back to Mark and John comparing their BMIs! This time, let's use objects to 
 implement the calculations! Remember: BMI = mass / height ** 2 = mass 
