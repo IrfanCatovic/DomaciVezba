@@ -75,9 +75,6 @@ let koalasAvgScore = (88 + 91 + 110) / 3;
  
 
 
-//Data 1: Dolphins score 44, 23 and 71. Koalas score 65, 54 and 49
-        const calAvg = (a, b, c) => (a + b + c) / 3 ;
-
             
         let scoreDoplhins = calAvg(44, 23, 71);
         let scoreKoalas = calAvg(65, 54, 49);
@@ -143,7 +140,7 @@ let koalasAvgScore = (88 + 91 + 110) / 3;
         let total = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
         console.log(bills);
         console.log(tips);
-        console.log(total); */
+        console.log(total); 
 
         const mark = {
             name: 'Mark',
@@ -173,25 +170,53 @@ let koalasAvgScore = (88 + 91 + 110) / 3;
         console.log(`${john.name}'s BMI (${john.bmi}) is higher than ${mark.name}'s (${mark.bmi})!`);
         } else{
             console.log(`${mark.name}'s BMI (${mark.bmi}) is higher than ${john.name}'s (${john.bmi})!`);
+        } */
+
+            function calcTip(bill){           
+            /*if(bill >= 50 && bill <= 300){
+                tip = bill * 0.15;
+                return tip;
+            }
+            else {
+                tip = bill * 0.20;
+                return tip;
+            }
+            return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
         }
 
-        /*Let's go back to Mark and John comparing their BMIs! This time, let's use objects to 
-implement the calculations! Remember: BMI = mass / height ** 2 = mass 
-/ (height * height) (mass in kg and height in meter)
-Your tasks:
+        let bills = [22, 295, 176, 440, 37, 105, 10, 1100,86, 52];
+        let tips =  [];
+        let totals = [];
+        
+        for ( let i = 0; i < bills.length; i++){
+            const tip = calcTip(bills[i]);
+            tips.push(tip);
+            totals.push(tip + bills[i]); 
+        }
+        
+        let sum = 0;
+        for (let i = 0; i < totals.length; i++){        
+            sum = sum + totals[i];
+            console.log(sum);
+        }
 
-1. For each of them, create an object with properties for their full name, mass, and 
-height (Mark Miller and John Smith)
+        function calcAvarage(arr){
+            return sum / totals.length ;
+        }
 
-2. Create a 'calcBMI' method on each object to calculate the BMI (the same 
-method on both objects). Store the BMI value to a property, and also return it 
-from the method
+        console.log(bills, tips, totals);
+        let arr = calcAvarage(sum);
+        console.log(arr); */
 
-3. Log to the console who has the higher BMI, together with the full name and the 
-respective BMI. Example: "John's BMI (28.3) is higher than Mark's (23.9)!"
 
-Test data: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.95 m 
-tall*/
+
+        
+        
+
+        
+        
+
+
 
 
 
